@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body class="bg-slate-800">
+    <div
+      class="container flex items-center justify-center w-auto h-screen mx-auto"
+    >
+      <div
+        class="inner-box rounded-xl py-6 px-2 text-center bg-gradient-to-tl from-sky-500 to-indigo-500 shadow-black"
+      >
+        <div class="box-top flex items-center justify-around mb-6">
+          <input
+            class="rounded-xl w-4/6 h-8 pl-4 text-base border-none outline-none font-semibold"
+            type="text"
+            name="city"
+            id="city"
+            placeholder="Enter city name"
+          />
+          <button
+            type="submit"
+            class="search bg-amber-50 w-10 h-7 rounded-full"
+          >
+            <i class="fa-solid fa-magnifying-glass text-slate-900"></i>
+          </button>
+        </div>
+        <div class="error text-3xl text-white">Invalid City Name</div>
+        <div class="box-middle text-white">
+          <img src="src/img/clear.png" alt="" class="weather-img h-20 inline" />
+          <!-- <i class="fa-regular fa-sun text-7xl text-yellow-500 mb-3"></i> -->
+          <h1 class="temperature text-6xl mb-3"></h1>
+          <h2 class="city text-5xl mb-5"></h2>
+          <div class="box-bottom flex justify-evenly">
+            <div class="info flex items-center text-2xl text-white">
+              <i class="fa-solid fa-temperature-half"></i>
+              <div class="info-data pl-2">
+                <p class="humidity"></p>
+                <p>Humidity</p>
+              </div>
+            </div>
+            <div class="info flex items-center text-2xl text-white">
+              <i class="fa-solid fa-wind"></i>
+              <div class="info-data pl-2">
+                <p class="wind"></p>
+                <p>Wind Speed</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
